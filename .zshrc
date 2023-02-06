@@ -3,8 +3,29 @@ eval "$(starship init zsh)"
 
 # Autocompletion
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Syntax highlight
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Antigen plugin manager
+# https://github.com/zsh-users/antigen/wiki/Installation
+source ~/.zsh/antigen.zsh
+
+# Load the oh-my-zsh's library
+antigen use oh-my-zsh
+
+# Bundles from the default repo
+antigen bundle command-not-found
+antigen bundle git
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+
+# Load the theme.
+# This would override the Starship prompt
+# antigen theme robbyrussell
+
+# Tell Antigen that you're done.
+# antigen apply
