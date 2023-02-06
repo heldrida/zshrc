@@ -1,5 +1,5 @@
 # My .zshrc file
 
-## Autocomplete
+# Install
 
-Autocompletion is handled by the `zsh-autosuggestions` script, a [Fish](https://fishshell.com/)-like autosuggestions for zsh.
+[Antigen - Plugin manager for Zsh](https://github.com/zsh-users/antigen/wiki/Cookbook)
